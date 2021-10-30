@@ -24,7 +24,3 @@ jobs:
       run: |
         cd dist
         zip -r dist.zip .
-
-    - name: Update lambda code
-      run: |
-        aws lambda update-function-code --function-name felps --zip-file fileb://dist/dist.zip
